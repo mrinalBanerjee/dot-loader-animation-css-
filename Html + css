@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>HTML</title>
+
+<style>
+
+*{
+
+ margin: 0;
+
+ padding: 0;
+
+}
+
+.main{
+
+ width: 100%;
+
+ height: 100vh;
+
+ display: flex;
+
+ justify-content: center;
+
+ align-items: center;
+
+ background: #000;
+
+ 
+
+}
+
+.main div{
+
+ width: 20px;
+
+ height: 20px;
+
+ background:linear-gradient(to right, rgba(183,222,237,1) 0%, rgba(133,206,239,1)80% , rgba(183,222,237,1) 100% );
+
+ border-radius: 50%;
+
+ margin:0 10px;
+
+}
+
+#firstdot{
+
+ position: relative;
+
+ animation: move 1s linear 0s infinite;
+
+}
+
+#seconddot {
+
+ position: relative;
+
+ animation: move 1s linear 0.25s infinite;
+
+}
+
+#thirddot {
+
+ position: relative;
+
+ animation: move 1s linear 0.50s infinite;
+
+}
+
+#fourdot {
+
+ position: relative;
+
+ animation: move 1s linear 0.75s infinite;
+
+}
+
+@keyframes move{
+
+ 0% {
+
+  top:0;
+
+ }
+
+  50% {
+
+   top: 12px;
+
+  }
+
+   100% {
+
+    top: 0;
+
+   }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="main">
+
+ <div id="firstdot"></div>
+
+  <div id="seconddot"></div>
+
+   <div id="thirddot"></div>
+
+ <div id="fourtdot"></div>
+
+</div>
+
+</body>
+
+</html>
+
